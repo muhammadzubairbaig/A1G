@@ -1,0 +1,113 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+package-lock.json
+yarn.lock
+
+# Build outputs
+/dist
+dist-ssr/
+/build
+*.local
+.cache/
+.temp/
+.output/
+
+# Testing
+/coverage
+.nyc_output
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+e2e/.auth/
+__snapshots__/
+*.snap
+
+# Environment files
+.env
+.env.*
+!.env.example
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+debug.log
+
+# Editor and IDE
+.idea
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS generated
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Build artifacts
+*.tsbuildinfo
+.eslintcache
+.stylelintcache
+.rollup.cache
+tsconfig.tsbuildinfo
+
+# Development files
+mocked-db.json
+local.settings.json
+*.local
+*.development
+*.test
+*.dev
+
+# Storybook
+storybook-static/
+.storybook-out/
+migration-storybook.log
+storybook.log
+
+# Misc
+.tmp/
+.temp/
+*.bak
+*.orig
+.history/
+.git/
+*.pid
+*.seed
+*.pid.lock
+
+# Cache
+.cache
+.parcel-cache
+
+# Misc
+*.pem
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+

@@ -1,0 +1,97 @@
+/**
+ * Global SCSS Mixins
+ * 
+ * This file contains reusable SCSS mixins that provide common styling patterns
+ * used throughout the application. These mixins help maintain consistency
+ * and reduce code duplication.
+ */
+
+/**
+ * Flex Center Mixin
+ * Centers content both horizontally and vertically using flexbox
+ * 
+ * Usage:
+ * .element {
+ *   @include flex-center;
+ * }
+ */
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/**
+ * Flex Between Mixin
+ * Spreads content horizontally with space between items
+ * 
+ * Usage:
+ * .element {
+ *   @include flex-between;
+ * }
+ */
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/**
+ * Hide Scrollbar Mixin
+ * Hides scrollbars across different browsers while maintaining functionality
+ * Also handles nested elements like react-window containers
+ * 
+ * Usage:
+ * .scrollable-element {
+ *   @include hide-scrollbar;
+ * }
+ */
+@mixin hide-scrollbar {
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  // For nested elements (like react-window)
+  & > div {
+    overflow: visible !important;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/**
+ * Card Container Mixin
+ * Applies standard card container styles with consistent width and margins
+ * 
+ * Usage:
+ * .card {
+ *   @include card-container;
+ * }
+ */
+@mixin card-container {
+  max-width: $container-max-width;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/**
+ * Title Text Mixin
+ * Applies standard title text styles with consistent spacing
+ * 
+ * Usage:
+ * .title {
+ *   @include title-text;
+ * }
+ */
+@mixin title-text {
+  font-size: $font-size-xl;
+  font-weight: $font-weight-bold;
+  margin-bottom: $spacing-sm;
+  margin-top: $spacing-xs;
+}

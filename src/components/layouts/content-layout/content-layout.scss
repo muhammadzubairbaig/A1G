@@ -1,0 +1,22 @@
+.content-layout {
+  height: 440px;
+  display: flex;
+  padding: 24px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &.success-layout {
+    height: 500px;
+  }
+
+  &.error-layout {
+    height: 600px;
+  }
+}

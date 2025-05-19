@@ -1,0 +1,17 @@
+@use '../../styles/variables' as *;
+
+.error-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-bg-color);
+  padding: 1rem;
+
+  .card-section {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+}

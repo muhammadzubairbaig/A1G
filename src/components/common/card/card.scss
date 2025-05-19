@@ -1,0 +1,10 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
+
+.custom-card {
+  background-color: $card-bg;
+  border-radius: $card-border-radius;
+  border: none;
+  box-shadow: $card-shadow;
+  display: grid;
+}

@@ -1,0 +1,53 @@
+/* Button styles */
+.button-container {
+  .button {
+    border: none;
+    transition:
+      background-color 0.2s,
+      transform 0.1s,
+      box-shadow 0.2s;
+
+    &:disabled,
+    &.loading {
+      cursor: not-allowed;
+      opacity: 0.65;
+    }
+  }
+
+  .button-primary {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    background: linear-gradient(90deg, rgb(0 97 255 / 97%) 0%, rgb(20 62 200 / 72%) 100%);
+    position: relative;
+    margin-bottom: 0.25rem;
+    color: var(--white);
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -50%;
+      width: 50%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.1);
+      transition: transform 0.6s ease;
+    }
+
+    &:hover::after {
+      transform: translateX(300%);
+    }
+  }
+
+  .loading {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .loading-text {
+    margin-left: 0.25rem;
+  }
+}

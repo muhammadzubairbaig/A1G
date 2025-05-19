@@ -1,0 +1,44 @@
+/**
+ * Global SCSS Variables
+ * 
+ * This file contains all global SCSS variables used throughout the application.
+ * It defines the core design tokens that maintain consistency in the UI.
+ */
+
+// Colors
+// Core brand colors and their variations
+$primary: var(--primary); // Primary brand color
+$card-bg: var(--card-bg-color); // Card background color
+$white: var(--white); // Pure white
+$light-bg: var(--light-bg-color); // Light background color
+$text: var(--text-color); // Main text color
+$border: var(--border-color); // Border color
+$secondary: var(--secondary-color); // Secondary color
+$default: var(--default-color); // Default state color
+
+// Typography
+// Font sizes follow a modular scale
+$font-size-base: 16px; // Base font size
+$font-size-lg: 18px; // Large text (1.125rem)
+$font-size-xl: 20px; // Extra large text (1.25rem)
+$font-weight-bold: 700; // Bold font weight
+
+// Spacing
+// Consistent spacing units based on rem
+$spacing-xs: 0.5rem; // Extra small spacing (8px)
+$spacing-sm: 0.75rem; // Small spacing (12px)
+$spacing-md: 1rem; // Medium spacing (16px)
+$spacing-lg: 1.5rem; // Large spacing (24px)
+
+// Layout
+// Core layout measurements
+$card-border-radius: 28px; // Card border radius
+$container-max-width: 300px; // Maximum container width
+$product-list-max-height: 440px; // Product list max height
+
+// Shadows
+// Box shadow definitions
+$card-shadow:
+  0 4px 6px rgba(0, 0, 0, 0.05),
+  // Card shadow
+  0 1px 3px rgba(0, 0, 0, 0.1);

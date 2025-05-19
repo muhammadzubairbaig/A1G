@@ -1,0 +1,27 @@
+@use '../../../../styles/variables' as *;
+@use '../../../../styles/mixins' as *;
+
+.product-list-container {
+  @include hide-scrollbar;
+  max-height: var(--product-list-max-height);
+
+  & > div > div {
+    height: 100% !important; // Override react-window div default overflow
+  }
+}
+
+.product-title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-sm);
+  margin-top: var(--spacing-xs);
+  padding: 0 var(--spacing-md);
+}
+
+.card-content {
+  max-width: var(--container-max-width);
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: calc(76px + var(--spacing-lg));
+  position: relative;
+}

@@ -1,0 +1,20 @@
+/* Global styles and theme variables */
+:root {
+  --primary: #1e40afb8;
+  --card-bg-color: #ffffff;
+  --white: #ffffff;
+  --light-bg-color: #e1e5f2;
+  --text-color: #666;
+  --border-color: #f0f0f0;
+  --secondary-color: #d6dbe5;
+  --default-color: #6c757d;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
